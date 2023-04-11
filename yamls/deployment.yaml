@@ -26,5 +26,8 @@ spec:
       - image: gcr.io/your_registry/bert:dev
         imagePullPolicy: IfNotPresent
         name: bert-1
+        resources:
+          requests:
+            memory: "3Gi"
       dnsPolicy: ClusterFirst
       restartPolicy: Always
